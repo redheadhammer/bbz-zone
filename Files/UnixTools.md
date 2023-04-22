@@ -1,3 +1,5 @@
+{% raw %}
+
 # Unix Tools
 
 1. [find](#find)
@@ -17,7 +19,7 @@ To get information of find command one can use it's manual with `man find`. This
    - ```bash
      # List all files in the given directory
      find MyDir
-      
+
      # To list all the directories in a particular Directory
      # use type setter and d as it's value
      find MyDir -type d
@@ -29,7 +31,7 @@ To get information of find command one can use it's manual with `man find`. This
    - ```bash
      # will return the path of test.py in the MyDir hierarchy
      find MyDir -type f -name "test.py"
-      
+
      # will return the mp3 files
      find MyDir -type f -name "*mp3"		# name will be case sensitive.
      find MyDir -type f -iname "*mp3"	# will make mp3 case insensitive.
@@ -40,14 +42,14 @@ To get information of find command one can use it's manual with `man find`. This
    - ```bash
      # search for the file modified less than 10 min ago
      find MyDir -type f -mmin -10
-      
+
      # search for the file modified more than 10 min ago
      find MyDir -type f -mmin +10
-      
+
      # search for a file modified less than 5 min ago
      # and also more than 2 min ago.
      find MyDir -type f -mmin -5 -mmin +2
-      
+
      # search for a file modified less than 10 days ago
      find MyDir -type f -mtime -10
      ```
@@ -59,7 +61,7 @@ To get information of find command one can use it's manual with `man find`. This
    - ```bash
      # search for all the files greater than 100MB
      find MyDir -size +100M
-      
+
      # k can be used for KB's and G can be used for GB's
      find MyDir -size -2K # will list all the files less than 2KB's
      ```
@@ -69,7 +71,7 @@ To get information of find command one can use it's manual with `man find`. This
    - ```bash
      # list all the empty files
      find MyDir -empty
-      
+
      # count all the empty files
      find MyDir -empty | wc -l
      ```
@@ -111,16 +113,16 @@ Grep is used to find patterns in files. **Combined with others like find, awk, s
      # will return all the lines containing Virat Kohli
      # also return the line if search element is a substring.
      grep "Virat Kohli" cricketers.txt
-      
+
      # will return only the lines which matches completely
      grep -w "Rohit Sharma" cricketers.txt
-      
+
      # Search shikhar dhawan but ignore case sensitivity
      grep -wi "shikhar dhawan" cricketers.txt
-      
+
      # Show line number of the match
      grep -wn "Rohit Sharma" cricketers.txt
-      
+
      ```
 
 2. Search for a name in contacts and also print nearby text i.e. 4 lines up or 4 lines down.
@@ -129,11 +131,11 @@ Grep is used to find patterns in files. **Combined with others like find, awk, s
      # will list all the names matching Akshay and also
      # content upto 4 lines behind the match
      grep -win -B 4 "Akshay" contacts.txt
-      
+
      # will list all the names matching Akshay and also
      # content upto 4 lines ahead the match
      grep -win -A 4 "Akshay" contacts.txt
-      
+
      # will print 4 lines ahead and 4 lines before
      grep -win -C 4 "Rahul" contacts.txt
      ```
@@ -143,13 +145,13 @@ Grep is used to find patterns in files. **Combined with others like find, awk, s
    - ```bash
      # list all files within current directory containing linux
      grep -win "Linux" ./*.txt
-      
+
      # list all files from hierarchy containing linux
      grep -winr "Linux" ./
-      
+
      # to list only files without getting matched line also
      grep -wirl "Linux" ./
-      
+
      # to list number of matches corresponding to each file use c
      grep -wirlc "Linux" .
      ```
@@ -158,7 +160,7 @@ Grep is used to find patterns in files. **Combined with others like find, awk, s
 
    - ```bash
      cat .bash_history | grep "git commit"
-      
+
      # get git-commit of dot files only
      cat .bash_history | grep "git commit" | grep "dotfiles"
      ```
@@ -187,7 +189,7 @@ Rsync is used to synchronize files. It has many advantages over manual sync. It 
    - ```bash
      # will sync all files from Images to Backup Dir
      rsync Images/* Backup/
-      
+
      # sync whole directory structure to Backup Dir
      rsync -r Images/ Backup/
      ```
@@ -235,3 +237,4 @@ Rsync is used to synchronize files. It has many advantages over manual sync. It 
 
 ## WC
 
+{% endraw %}

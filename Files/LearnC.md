@@ -1,3 +1,5 @@
+{% raw %}
+
 ### Index
 
 1. [Makefile](#Using-makefile-to-Build)
@@ -2747,3 +2749,4 @@ The above code can be used to modify the string array but if we don't want any e
 
 - true / false --> to use true false values in program
 
+{% endraw %}
