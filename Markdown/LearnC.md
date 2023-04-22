@@ -1,5 +1,3 @@
-{% raw %}
-
 ### Index
 
 1. [Makefile](#Using-makefile-to-Build)
@@ -764,17 +762,17 @@ In c array is made with `char array[]` and a string can be created with `char *s
 **Creating Multidimensional arrays in C**
 
 ```c
-int array[][3] = {{1,2,3},{9,7,2}};
+int array[][3] = { {1,2,3},{9,7,2} };
 ```
 
 remember that it is required to specify the size of internal arrays in C, otherwise there will be a compilation error.
 
 ###### Multidimensional Arrays and Pointers in C
 
-`int array[2][3] = {{ 1, 2, 3}, {4, 5, 6}}.` This is how a multidimensional array is created. Pointer for a multidimensional array is defined like `int *ptr[3]`, this shows that ptr is a pointer for an array of 3 elements. Multidimensional arrays can be used with pointers as in below code.
+`int array[2][3] = { { 1, 2, 3}, {4, 5, 6} }.` This is how a multidimensional array is created. Pointer for a multidimensional array is defined like `int *ptr[3]`, this shows that ptr is a pointer for an array of 3 elements. Multidimensional arrays can be used with pointers as in below code.
 
 ```c
-int array[2][3] = {{ 1, 2, 3}, {4, 5, 6}};
+int array[2][3] = { { 1, 2, 3}, {4, 5, 6} };
 int (*ptr)[3] = array
 ....
 ```
@@ -981,7 +979,7 @@ void display(struct Player player){
     }
 }
 int main(){
-    struct Player group = {{"Rohit", "Virat", "Pant"}, {45, 18, 17}};
+    struct Player group = { {"Rohit", "Virat", "Pant"}, {45, 18, 17} };
     display(group);
 }
 ```
@@ -2748,5 +2746,3 @@ The above code can be used to modify the string array but if we don't want any e
 #### Booleans <stdbool.h>
 
 - true / false --> to use true false values in program
-
-{% endraw %}

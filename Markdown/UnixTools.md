@@ -1,5 +1,3 @@
-{% raw %}
-
 # Unix Tools
 
 1. [find](#find)
@@ -236,5 +234,3 @@ Rsync is used to synchronize files. It has many advantages over manual sync. It 
 ## glob
 
 ## WC
-
-{% endraw %}
