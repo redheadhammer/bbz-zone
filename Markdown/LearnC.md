@@ -1,3 +1,8 @@
+---
+layout: default
+title: Learn C the Hard Way
+---
+
 ### Index
 
 1. [Makefile](#Using-makefile-to-Build)

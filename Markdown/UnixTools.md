@@ -1,3 +1,8 @@
+---
+layout: default
+title: Linux Tools
+---
+
 # Unix Tools
 
 1. [find](#find)
