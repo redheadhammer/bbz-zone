@@ -1,5 +1,6 @@
 sourc: .
 destination: _site
+remote_theme: "dracula/gh-pages"
 
 markdown: kramdown
 kramdown:
