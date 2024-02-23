@@ -1,5 +1,9 @@
 ---
 layout: default
+title: Page Title
+---
+---
+layout: default
 title: Learn C the Hard Way
 ---
 
